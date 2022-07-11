@@ -1,12 +1,40 @@
+body {
+    background-image: url("https://www.aihr.com/wp-content/uploads/working-from-home-background-and-featured-image.png");
+}
+.container {
+    background-color: inherit;
+}
+.delete-button {
+    visibility: hidden;
+    width: auto;
+    height: auto;
+}
+li :hover {
+    background-color: rgb(237, 223, 65);
+    align-items: center;
+}
 
-/* 
+li :hover .delete-button {
+    visibility: visible;
+}
+.input {
+    opacity: 0.8;
+    font-weight: bolder;
+    font-size: larger;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+.list-group-item {
+    opacity: 0.9;
+    font-weight: bolder;
+    font-size:large;
+}
+.label, .no-task {
+    border: 1px solid rgb(215, 213, 213);
+    border-radius: 15px;
+    padding: 15px;
+    text-align: end;
+    color: rgb(109, 6, 109);
+    font-weight: 500;
+    opacity: 0.8;
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
-
-*/
