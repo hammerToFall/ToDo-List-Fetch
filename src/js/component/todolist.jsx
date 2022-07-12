@@ -60,10 +60,11 @@ const ToDoList = () => {
   const addTask = () => {
     if (text.length > 0) {
       let taskObj = {label: text, done: false,};
+      let tareas = [... task, taskObj]
       setTask([...task, taskObj]);
-      console.log(task);
+     // console.log(task);
       setText("");
-      uploadList();
+      uploadList(tareas);
     }
   };
 
@@ -164,7 +165,6 @@ const ToDoList = () => {
         ) : (
         <div className="no-task">No pending task</div>
       )}
-      {/* {task.map(renderList)} */}
       {loader(task)}
       <div className="deleteTasks">
         <button className="btn btn-warning" onClick={() => {deleteAllTasks()}}>Delete all</button>
