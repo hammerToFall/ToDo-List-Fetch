@@ -4,11 +4,11 @@ body {
 .container {
     background-color: inherit;
 }
-.delete-button {
+/* .delete-button {
     visibility: hidden;
     width: auto;
     height: auto;
-}
+} */
 li :hover {
     background-color: rgb(237, 223, 65);
     align-items: center;
@@ -36,5 +36,9 @@ li :hover .delete-button {
     color: rgb(109, 6, 109);
     font-weight: 500;
     opacity: 0.8;
+}
+.deleteTasks{
+    display: flex;
+    justify-content: end;
 }
 
